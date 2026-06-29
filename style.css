@@ -65,12 +65,12 @@ body {
 }
 
 .logo img {
-    height: 75px; /* Aumentamos o tamanho de 55px para 75px */
-    width: 75px;  /* Força a imagem a ser um quadrado perfeito para o círculo funcionar */
-    object-fit: cover; /* Garante que a logo não fique distorcida ou amassada */
-    border-radius: 50%; /* Transforma o quadrado em um círculo perfeito */
-    border: 2px solid rgba(58, 134, 255, 0.4); /* Adiciona uma bordinha fina azul */
-    
+    height: 75px;        /* Altura da logo */
+    width: 75px;         /* Largura idêntica à altura para formar um círculo perfeito */
+    object-fit: cover;   /* Impede que a foto fique amassada ou esticada */
+    border-radius: 50%;  /* Esta linha é o segredo: ela corta os cantos em círculo */
+    border: 2px solid rgba(58, 134, 255, 0.4); /* Linha fina azul na borda */
+    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); /* Efeito de luz suave em volta */
     /* O efeito de luz: cria um reflexo iluminado azul ao redor da logo */
     box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); 
     
