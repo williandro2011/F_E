@@ -483,7 +483,7 @@ body {
     z-index: -2;
 }
 
-/* A capa interna do botão (para cobrir o centro do degradê e sobrar só a borda) */
+/* A capa interna do botão (para cobrir o centro do degradê e sobrar só a boddda) */
 .btn-whatsapp::after {
     content: '';
     position: absolute;
