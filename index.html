@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&E Poços Artesianos e Manutenção</title>
+    <title>F&E Engenharia de Poços Artesianos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <span>F&E</span> POÇOS ARTESIANOS
+                <span>F&E</span> ENGENHARIA HÍDRICA
             </div>
             <nav class="nav-links">
                 <a href="#inicio">Início</a>
@@ -24,68 +25,88 @@
     </header>
 
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Água pura e em abundância para sua propriedade</h1>
-            <p>Do projeto à manutenção: soluções completas em poços artesianos com a engenharia, qualidade e a confiança que sua estrutura precisa.</p>
-            <a href="#contato" class="btn-orcamento">Solicitar Orçamento Grátis</a>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1000">
+            <h1>Segurança hídrica e alta engenharia para sua estrutura</h1>
+            <p>Do mapeamento geológico à manutenção de alta precisão. Soluções definitivas em poços artesianos operadas pela família F&E.</p>
+            <a href="#contato" class="btn-orcamento">
+                Solicitar Estudo de Viabilidade <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
     </section>
 
+    <div class="metrics-bar" data-aos="fade-up" data-aos-delay="200">
+        <div class="metric-item">
+            <h4>+15 Anos</h4>
+            <p>De experiência no setor</p>
+        </div>
+        <div class="metric-item">
+            <h4>100%</h4>
+            <p>Poços homologados e legais</p>
+        </div>
+        <div class="metric-item">
+            <h4>24/7</h4>
+            <p>Suporte a emergências</p>
+        </div>
+    </div>
+
     <section id="perfuracao" class="section">
-        <div class="section-title">
-            <span class="badge-principal">Perfuração e Projetos</span>
+        <div class="section-title" data-aos="fade-up">
+            <span class="badge">Perfuração Executiva</span>
             <h2>F&E Poços Artesianos</h2>
         </div>
 
         <div class="grid-servicos">
-            <div class="card-servico">
+            <div class="card-servico" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-icon-wrapper">
-                    <i class="fa-solid fa-house-chimney"></i>
+                    <i class="fa-solid fa-droplet"></i>
                 </div>
                 <h3>Perfuração Residencial</h3>
-                <p>Abastecimento seguro para residências, condomínios e chácaras, garantindo autonomia e valorização do imóvel.</p>
+                <p>Mapeamento e execução sob medida para residências e condomínios, focando em máxima vazão, pureza e valorização patrimonial.</p>
             </div>
-            <div class="card-servico">
+            
+            <div class="card-servico" data-aos="fade-up" data-aos-delay="200">
                 <div class="card-icon-wrapper">
-                    <i class="fa-solid fa-industry"></i>
+                    <i class="fa-solid fa-gavel"></i>
                 </div>
-                <h3>Poços Industriais</h3>
-                <p>Projetos robustos planejados para indústrias e agronegócio que demandam alta vazão e fornecimento ininterrupto.</p>
+                <h3>Projetos de Alta Vazão</h3>
+                <p>Dimensionamento pesado focado em suprir demandas do agronegócio e complexos industriais com fluxo contínuo garantido.</p>
             </div>
-            <div class="card-servico">
+            
+            <div class="card-servico" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-icon-wrapper">
-                    <i class="fa-solid fa-file-shield"></i>
+                    <i class="fa-solid fa-file-invoice"></i>
                 </div>
-                <h3>Outorga e Legalização</h3>
-                <p>Regularização jurídica completa, estudos geológicos e licenças ambientais para funcionamento 100% legalizado.</p>
+                <h3>Estudos e Outorgas</h3>
+                <p>Corpo técnico preparado para cuidar de toda a análise de solo, documentação ambiental e aprovação legal do seu projeto.</p>
             </div>
         </div>
     </section>
 
     <div class="bg-sub">
         <section id="manutencao" class="section">
-            <div class="section-title">
-                <span class="badge-sub">Assistência e Cuidados</span>
+            <div class="section-title" data-aos="fade-up">
+                <span class="badge badge-sub">Manutenção e Engenharia Reversa</span>
                 <h2>F&E Manutenção de Poços</h2>
             </div>
 
             <div class="list-manutencao">
-                <div class="item-manutencao">
+                <div class="item-manutencao" data-aos="fade-right">
                     <div class="icon-box">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <i class="fa-solid fa-gears"></i>
                     </div>
                     <div>
-                        <h3>Manutenção Preventiva e Corretiva</h3>
-                        <p>Limpeza química profunda, teste de vazão, desinfecção de poços antigos e recuperação de diâmetro (retubagem).</p>
+                        <h3>Restauração e Diagnóstico</h3>
+                        <p>Limpeza química por jateamento, testes dinâmicos de vazão, desinfecção microbiológica e recuperação de camisas colapsadas.</p>
                     </div>
                 </div>
-                <div class="item-manutencao">
+                
+                <div class="item-manutencao" data-aos="fade-left">
                     <div class="icon-box">
-                        <i class="fa-solid fa-bolt"></i>
+                        <i class="fa-solid fa-plug-circle-bolt"></i>
                     </div>
                     <div>
-                        <h3>Bombas e Quadros Elétricos</h3>
-                        <p>Diagnóstico técnico, dimensionamento, instalação e substituição de bombas submersas e painéis de proteção.</p>
+                        <h3>Sistemas de Bombeamento</h3>
+                        <p>Venda, instalação técnica e automação de bombas submersas de marcas líderes, além de montagem de painéis inteligentes de proteção.</p>
                     </div>
                 </div>
             </div>
@@ -94,18 +115,18 @@
 
     <footer id="contato" class="footer">
         <div class="footer-container">
-            <div class="footer-info">
-                <h3>F&E Perfuração e Manutenção de Poços</h3>
-                <p>Nossa missão é levar soluções hídricas sustentáveis e de alta engenharia, assegurando água com qualidade para as futuras gerações.</p>
-                <p style="margin-top: 25px; color: #cbd5e1;">
-                    <i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 8px;"></i>Atendemos toda a região [Inserir Cidade/Estado]
+            <div class="footer-info" data-aos="fade-up">
+                <h3>F&E Engenharia Hídrica</h3>
+                <p>Nossa engenharia transforma recursos subterrâneos em segurança e autonomia para o seu dia a dia, com responsabilidade e precisão técnica.</p>
+                <p style="margin-top: 30px; color: #cbd5e1;">
+                    <i class="fa-solid fa-location-dot" style="color: var(--accent); margin-right: 10px;"></i> Atendimento em toda a Região Metropolitana e Interior.
                 </p>
             </div>
-            <div>
-                <h3 style="font-size: 1.2rem;">Canais de Atendimento</h3>
-                <p>Clique abaixo para iniciar uma consulta técnica com nossa equipe via WhatsApp corporativo.</p>
-                <a href="https://wa.me/5500999999999?text=Olá,%20gostaria%20de%20um%20atendimento." target="_blank" class="btn-whatsapp">
-                    <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Falar com um Especialista
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 style="font-size: 1.2rem;">Divisão de Atendimento</h3>
+                <p>Fale agora com nosso time técnico corporativo para agendar uma visita ao seu terreno ou planta industrial.</p>
+                <a href="https://wa.me/5500999999999?text=Olá,%20gostaria%20de%20um%20atendimento%20técnico." target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Iniciar Consulta Gratuita
                 </a>
             </div>
         </div>
@@ -114,5 +135,12 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Velocidade da animação (800ms)
+            once: true,    // Anima apenas uma vez ao descer a página
+        });
+    </script>
 </body>
 </html>
