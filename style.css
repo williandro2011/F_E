@@ -65,23 +65,22 @@ body {
 }
 
 .logo img {
-    height: 75px;        /* Altura da logo */
-    width: 75px;         /* Largura idêntica à altura para formar um círculo perfeito */
-    object-fit: cover;   /* Impede que a foto fique amassada ou esticada */
-    border-radius: 50%;  /* Esta linha é o segredo: ela corta os cantos em círculo */
-    border: 2px solid rgba(58, 134, 255, 0.4); /* Linha fina azul na borda */
-    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); /* Efeito de luz suave em volta */
-    /* O efeito de luz: cria um reflexo iluminado azul ao redor da logo */
-    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); 
+    height: 65px;        /* Altura da logo */
+    width: auto;         /* Deixa a largura livre para respeitar o formato original da foto */
+    object-fit: contain; /* Garante que a foto apareça inteira sem cortes */
     
+    border-radius: 12px; /* O SEGREDO AQUI: Arredonda só os 4 cantinhos, mantendo ela quadrada/retangular */
+    
+    border: 2px solid rgba(58, 134, 255, 0.4); /* A bordinha fina azul contornando a foto */
+    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); /* O efeito de luz em volta dela */
     transition: all 0.3s ease;
 }
 
-/* Quando o cliente passar o mouse perto da logo, ela ganha ainda mais vida */
+/* Efeito quando passa o mouse */
 .logo img:hover {
-    transform: scale(1.05); /* Um leve zoom elegante */
-    border-color: var(--accent); /* A bordinha acende */
-    box-shadow: 0 0 25px rgba(58, 134, 255, 0.6); /* O brilho expande */
+    transform: scale(1.05); 
+    border-color: var(--accent); 
+    box-shadow: 0 0 25px rgba(58, 134, 255, 0.6); 
 }
 
 .nav-links {
