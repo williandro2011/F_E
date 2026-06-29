@@ -344,18 +344,75 @@ body {
     color: #94a3b8;
 }
 
+/* ==========================================================================
+   BOTÃO DO WHATSAPP COM FIO DE LUZ CIRCULANTE (PREMIUM)
+   ========================================================================== */
 .btn-whatsapp {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background-color: var(--success);
-    color: var(--primary);
-    text-decoration: none;
-    padding: 14px 24px;
-    border-radius: 10px;
+    background-color: var(--primary); /* Fundo escuro para destacar o fio de luz */
+    color: var(--white) !important;
+    padding: 16px 32px;
+    border-radius: 12px;
     font-weight: 700;
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: 0.95rem;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 8px 24px rgba(6, 214, 160, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* O "Fio de Luz" (Degradê que vai girar atrás do botão) */
+.btn-whatsapp::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        transparent, 
+        rgba(6, 214, 160, 0.1), 
+        var(--success), /* A luz forte acesa */
+        transparent 30%
+    );
+    animation: girarLuz 3s linear infinite;
+    z-index: -2;
+}
+
+/* A capa interna do botão (para cobrir o centro do degradê e sobrar só a borda) */
+.btn-whatsapp::after {
+    content: '';
+    position: absolute;
+    inset: 2px; /* Espessura da borda iluminada (2px) */
+    background: #0f172a; /* Cor interna do botão */
+    border-radius: 10px;
+    z-index: -1;
+    transition: background 0.3s ease;
+}
+
+/* Efeito de Brilho Dinâmico no Hover */
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(6, 214, 160, 0.6); /* Brilho expande */
+}
+
+.btn-whatsapp:hover::after {
+    background: #132247; /* Clareia levemente o fundo ao passar o mouse */
+}
+
+/* Animação que faz o fio de luz circular */
+@keyframes girarLuz {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .copyright {
