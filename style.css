@@ -65,14 +65,12 @@ body {
 }
 
 .logo img {
-    height: 65px;        /* Altura da logo */
-    width: auto;         /* Deixa a largura livre para respeitar o formato original da foto */
-    object-fit: contain; /* Garante que a foto apareça inteira sem cortes */
-    
-    border-radius: 12px; /* O SEGREDO AQUI: Arredonda só os 4 cantinhos, mantendo ela quadrada/retangular */
-    
-    border: 2px solid rgba(58, 134, 255, 0.4); /* A bordinha fina azul contornando a foto */
-    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); /* O efeito de luz em volta dela */
+    height: 65px;        
+    width: auto;         
+    object-fit: contain; 
+    border-radius: 12px !important; /* O !important garante que o círculo seja destruído */
+    border: 2px solid rgba(58, 134, 255, 0.4); 
+    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); 
     transition: all 0.3s ease;
 }
 
