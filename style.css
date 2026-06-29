@@ -56,15 +56,15 @@ body {
 }
 
 .logo {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: var(--primary);
-    letter-spacing: -0.5px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo span {
-    color: var(--accent);
+.logo img {
+    height: 55px; /* Aumentei um pouquinho para a logo deles aparecer bem */
+    width: auto;
+    border-radius: 8px; /* Dá uma leve arredondada nas bordas da imagem */
 }
 
 .nav-links {
