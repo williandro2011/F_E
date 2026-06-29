@@ -1,6 +1,20 @@
+/* Importando uma fonte moderna e profissional */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 /* ==========================================================================
-   CONFIGURAÇÕES GERAIS E CORES
+   VARIÁVEIS DE CORES E RESET
    ========================================================================== */
+:root {
+    --primary: #0f172a;       /* Azul Escuro Slate (Muito corporativo) */
+    --accent: #2563eb;        /* Azul Royal para destaques */
+    --accent-hover: #1d4ed8;  /* Azul Royal mais escuro */
+    --success: #16a34a;       /* Verde profissional para conversão */
+    --text-main: #334155;     /* Cinza escuro para leitura confortável */
+    --text-muted: #64748b;    /* Cinza claro para subtítulos */
+    --bg-light: #f8fafc;      /* Fundo suave */
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,222 +22,288 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fafb;
-    color: #1f2937;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.7;
 }
 
 /* ==========================================================================
-   TOPO / NAVEGAÇÃO (RESPONSIVO)
+   NAVEGAÇÃO PREMIUM
    ========================================================================== */
 .header {
-    background-color: #1e3a8a; /* Azul Escuro */
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco moderno */
     position: sticky;
     top: 0;
-    z-index: 50;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px 20px;
     display: flex;
-    flex-direction: column; /* Padrão para celular: empilhado */
+    flex-direction: column;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.5px;
 }
 
 .logo span {
-    color: #60a5fa; /* Azul Claro */
+    color: var(--accent);
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 28px;
     margin-top: 15px;
     align-items: center;
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: var(--text-main);
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #93c5fd;
+    color: var(--accent);
 }
 
-.btn-contato {
-    background-color: #3b82f6;
-    padding: 8px 16px;
-    border-radius: 4px;
+.btn-nav-contato {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
 }
 
-.btn-contato:hover {
-    background-color: #2563eb;
+.btn-nav-contato:hover {
+    background-color: var(--accent);
 }
 
 /* ==========================================================================
-   BANNER PRINCIPAL (HERO)
+   HERO SECTION (BANNER)
    ========================================================================== */
 .hero {
-    background: linear-gradient(to right, #1e3a8a, #1d4ed8);
-    color: #ffffff;
-    padding: 60px 20px;
+    background-color: var(--primary);
+    background-image: radial-gradient(circle at top right, rgba(37, 99, 235, 0.2), transparent 45%);
+    color: var(--white);
+    padding: 80px 20px;
     text-align: center;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 24px;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    color: #d1d5db;
-    margin-bottom: 30px;
+    font-size: 1.15rem;
+    color: #94a3b8;
+    margin-bottom: 36px;
+    font-weight: 400;
 }
 
 .btn-orcamento {
     display: inline-block;
-    background-color: #22c55e; /* Verde */
-    color: white;
+    background-color: var(--accent);
+    color: var(--white);
     text-decoration: none;
-    font-weight: bold;
-    padding: 14px 32px;
+    font-weight: 600;
+    padding: 16px 36px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    letter-spacing: -0.2px;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-orcamento:hover {
-    background-color: #16a34a;
-    transform: scale(1.05);
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
 }
 
 /* ==========================================================================
-   SEÇÃO DE PERFURAÇÃO (COM O EFEITO QUE VOCÊ PEDIU)
+   SEÇÕES E CARDS (EFEITO ELEVAÇÃO REFINADO)
    ========================================================================== */
 .section {
-    padding: 60px 20px;
+    padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .badge-principal {
-    color: #2563eb;
-    font-weight: bold;
+    color: var(--accent);
+    background-color: #dbeafe;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
 }
 
 .section-title h2 {
-    font-size: 2rem;
-    margin-top: 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 15px;
+    letter-spacing: -0.5px;
 }
 
-/* Grid de Cards */
 .grid-servicos {
     display: grid;
-    grid-template-columns: 1fr; /* 1 coluna no celular */
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
-/* O CARD E O EFEITO DE ELEVAÇÃO (HOVER) */
+/* O CARD PROFISSIONAL */
 .card-servico {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-top: 4px solid #2563eb;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    /* Sombra muito sutil e suave */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
     
-    /* Configuração da transição do efeito */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    /* Transição extremamente fluida usando 'cubic-bezier' */
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Efeito quando o mouse encosta (Hover) */
+.card-servico::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Efeito Hover Premium */
 .card-servico:hover {
-    transform: translateY(-8px); /* Eleva o card para cima */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra dando profundidade */
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    border-color: #cbd5e1;
+}
+
+.card-servico:hover::before {
+    opacity: 1; /* Mostra a linha azul no topo apenas no hover */
+}
+
+.card-icon-wrapper {
+    color: var(--accent);
+    font-size: 1.75rem;
+    margin-bottom: 20px;
 }
 
 .card-servico h3 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+    font-weight: 700;
     margin-bottom: 12px;
-    color: #1e3a8a;
+    color: var(--primary);
+    letter-spacing: -0.3px;
 }
 
 .card-servico p {
-    color: #4b5563;
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 /* ==========================================================================
-   SEÇÃO SUB-EMPRESA: MANUTENÇÃO
+   SUB-EMPRESA: MANUTENÇÃO
    ========================================================================== */
 .bg-sub {
-    background-color: #eff6ff; /* Fundo azul bem clarinho */
+    background-color: #f1f5f9;
 }
 
 .badge-sub {
-    color: #16a34a;
-    font-weight: bold;
+    color: var(--success);
+    background-color: #dcfce7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
 }
 
 .list-manutencao {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 32px;
 }
 
 .item-manutencao {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 16px;
     display: flex;
-    gap: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    gap: 24px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease;
+}
+
+.item-manutencao:hover {
+    transform: translateY(-4px);
 }
 
 .icon-box {
-    background-color: #dbeafe;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    height: fit-content;
+    background-color: #eff6ff;
+    color: var(--accent);
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-manutencao h3 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 /* ==========================================================================
-   RODAPÉ / CONTATO
+   FOOTER CORPORATIVO
    ========================================================================== */
 .footer {
-    background-color: #030712;
-    color: #9ca3af;
-    padding: 40px 20px 20px 20px;
+    background-color: var(--primary);
+    color: #94a3b8;
+    padding: 80px 20px 30px 20px;
 }
 
 .footer-container {
@@ -231,72 +311,81 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-    border-bottom: 1px solid #1f2937;
-    padding-bottom: 30px;
+    gap: 60px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 40px;
 }
 
 .footer-info h3 {
-    color: #ffffff;
-    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-info p {
+    font-size: 0.95rem;
 }
 
 .btn-whatsapp {
-    display: inline-block;
-    background-color: #16a34a;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--success);
+    color: var(--white);
     text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+    transition: all 0.2s ease;
 }
 
 .btn-whatsapp:hover {
     background-color: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(22, 163, 74, 0.5);
 }
 
 .copyright {
     text-align: center;
-    font-size: 0.75rem;
-    margin-top: 20px;
-    color: #4b5563;
+    font-size: 0.8rem;
+    margin-top: 30px;
+    color: #64748b;
 }
 
-
 /* ==========================================================================
-   MEDIA QUERIES (RESPONSIVIDADE PARA TELAS MAIORES)
+   MEDIA QUERIES (RESPONSIVIDADE AJUSTADA)
    ========================================================================== */
-
-/* Computadores e Notebooks (Telas a partir de 768px) */
 @media (min-width: 768px) {
     .header-container {
-        flex-direction: row; /* Alinha logo na esquerda e menu na direita */
+        flex-direction: row;
         justify-content: space-between;
+        padding: 20px;
     }
 
     .nav-links {
-        margin-top: 0; /* Remove a margem do topo que existia no mobile */
+        margin-top: 0;
     }
 
     .hero {
-        padding: 100px 20px; /* Mais espaçamento na tela grande */
+        padding: 140px 20px;
     }
 
     .hero h1 {
-        font-size: 3.5rem; /* Texto maior */
+        font-size: 3.8rem;
     }
 
     .grid-servicos {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .list-manutencao {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas lado a lado */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-container {
-        grid-template-columns: repeat(2, 1fr); /* Divide o rodapé em 2 colunas */
+        grid-template-columns: 1.2fr 0.8fr;
     }
 }
