@@ -55,6 +55,9 @@ body {
     gap: 12px;
 }
 
+/* ==========================================================================
+   LOGO COORPORATIVA COM EFEITO GLOW CIRCULAR
+   ========================================================================== */
 .logo {
     display: flex;
     align-items: center;
@@ -62,9 +65,23 @@ body {
 }
 
 .logo img {
-    height: 55px; /* Aumentei um pouquinho para a logo deles aparecer bem */
-    width: auto;
-    border-radius: 8px; /* Dá uma leve arredondada nas bordas da imagem */
+    height: 75px; /* Aumentamos o tamanho de 55px para 75px */
+    width: 75px;  /* Força a imagem a ser um quadrado perfeito para o círculo funcionar */
+    object-fit: cover; /* Garante que a logo não fique distorcida ou amassada */
+    border-radius: 50%; /* Transforma o quadrado em um círculo perfeito */
+    border: 2px solid rgba(58, 134, 255, 0.4); /* Adiciona uma bordinha fina azul */
+    
+    /* O efeito de luz: cria um reflexo iluminado azul ao redor da logo */
+    box-shadow: 0 0 15px rgba(58, 134, 255, 0.3); 
+    
+    transition: all 0.3s ease;
+}
+
+/* Quando o cliente passar o mouse perto da logo, ela ganha ainda mais vida */
+.logo img:hover {
+    transform: scale(1.05); /* Um leve zoom elegante */
+    border-color: var(--accent); /* A bordinha acende */
+    box-shadow: 0 0 25px rgba(58, 134, 255, 0.6); /* O brilho expande */
 }
 
 .nav-links {
