@@ -1,0 +1,302 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E CORES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   TOPO / NAVEGAÇÃO (RESPONSIVO)
+   ========================================================================== */
+.header {
+    background-color: #1e3a8a; /* Azul Escuro */
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Padrão para celular: empilhado */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #60a5fa; /* Azul Claro */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #93c5fd;
+}
+
+.btn-contato {
+    background-color: #3b82f6;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn-contato:hover {
+    background-color: #2563eb;
+}
+
+/* ==========================================================================
+   BANNER PRINCIPAL (HERO)
+   ========================================================================== */
+.hero {
+    background: linear-gradient(to right, #1e3a8a, #1d4ed8);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.btn-orcamento {
+    display: inline-block;
+    background-color: #22c55e; /* Verde */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-orcamento:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   SEÇÃO DE PERFURAÇÃO (COM O EFEITO QUE VOCÊ PEDIU)
+   ========================================================================== */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.badge-principal {
+    color: #2563eb;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+/* Grid de Cards */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna no celular */
+    gap: 30px;
+}
+
+/* O CARD E O EFEITO DE ELEVAÇÃO (HOVER) */
+.card-servico {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #2563eb;
+    
+    /* Configuração da transição do efeito */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efeito quando o mouse encosta (Hover) */
+.card-servico:hover {
+    transform: translateY(-8px); /* Eleva o card para cima */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra dando profundidade */
+}
+
+.card-servico h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+.card-servico p {
+    color: #4b5563;
+}
+
+/* ==========================================================================
+   SEÇÃO SUB-EMPRESA: MANUTENÇÃO
+   ========================================================================== */
+.bg-sub {
+    background-color: #eff6ff; /* Fundo azul bem clarinho */
+}
+
+.badge-sub {
+    color: #16a34a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.list-manutencao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.item-manutencao {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.icon-box {
+    background-color: #dbeafe;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    height: fit-content;
+}
+
+/* ==========================================================================
+   RODAPÉ / CONTATO
+   ========================================================================== */
+.footer {
+    background-color: #030712;
+    color: #9ca3af;
+    padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 30px;
+}
+
+.footer-info h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #15803d;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 20px;
+    color: #4b5563;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVIDADE PARA TELAS MAIORES)
+   ========================================================================== */
+
+/* Computadores e Notebooks (Telas a partir de 768px) */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row; /* Alinha logo na esquerda e menu na direita */
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        margin-top: 0; /* Remove a margem do topo que existia no mobile */
+    }
+
+    .hero {
+        padding: 100px 20px; /* Mais espaçamento na tela grande */
+    }
+
+    .hero h1 {
+        font-size: 3.5rem; /* Texto maior */
+    }
+
+    .grid-servicos {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+    }
+
+    .list-manutencao {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas lado a lado */
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* Divide o rodapé em 2 colunas */
+    }
+}
