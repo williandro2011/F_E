@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 .bloco-info li {
-    margin-bottom: 15px;
+    margin-bottom: 25px; /* Espaço confortável para os novos textos expandidos */
     padding-left: 20px;
     position: relative;
 }
@@ -253,7 +253,4 @@ footer .direitos {
     .hero h2 { 
         font-size: 32px; 
     }
-}
-.bloco-info li {
-    margin-bottom: 20px; /* Aumenta o espaço entre os setores para facilitar a leitura */
 }
