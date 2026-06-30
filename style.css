@@ -254,3 +254,6 @@ footer .direitos {
         font-size: 32px; 
     }
 }
+.bloco-info li {
+    margin-bottom: 20px; /* Aumenta o espaço entre os setores para facilitar a leitura */
+}
