@@ -4,71 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F & E Poços Artesianos - Perfuração e Manutenção</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <h1>F & E <span>POÇOS</span></h1>
-        </div>
+        <div class="logo">F & E <span>POÇOS</span></div>
         <nav>
             <a href="#home">Início</a>
             <a href="#servicos">Serviços</a>
             <a href="#sobre">Diferenciais</a>
-            <a href="#contato">Contato</a>
+            <a href="#contato" class="btn-nav">Fale Conosco</a>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h2>Água de Qualidade com Eficiência e Confiança!</h2>
-        <p>Soluções completas em perfuração e manutenção de poços artesianos para garantir o abastecimento seguro e sustentável da sua propriedade.</p>
-        <a href="https://wa.me/5542991133334" target="_blank" class="btn-whatsapp">Solicitar Orçamento via WhatsApp</a>
+        <div class="hero-content">
+            <span class="tag-topo">✓ Excelência em Engenharia Hídrica</span>
+            <h2>Água de Qualidade com Eficiência e Confiança!</h2>
+            <p>Soluções completas em perfuração, manutenção e automação de poços artesianos para garantir o abastecimento seguro e sustentável do seu patrimônio.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5542991133334" target="_blank" class="btn-primary">Solicitar Orçamento Gratuito</a>
+            </div>
+        </div>
     </section>
 
     <section id="servicos" class="servicos">
-        <h2 class="titulo-secao">Nossos Serviços Especializados</h2>
-        <div class="grid-servicos">
+        <div class="container">
+            <span class="subtitulo">O Que Fazemos</span>
+            <h2 class="titulo-secao">Nossos Serviços Especializados</h2>
             
-            <div class="card-servico">
-                <h3>Perfuração de Poços Artesianos</h3>
-                <p>Execução de obras subterrâneas complexas utilizando sondas rotativas e rotopercussivas de alta tecnologia, capazes de perfurar solos e formações rochosas profundas com total segurança e respeito às normas ambientais.</p>
-                <p class="importancia">Por que importa: Evita contaminações superficiais e garante uma obra duradoura com fluxo de água constante por décadas.</p>
-            </div>
+            <div class="grid-servicos">
+                <div class="card-servico">
+                    <div class="card-icon">🚰</div>
+                    <h3>Perfuração de Poços Artesianos</h3>
+                    <p>Execução de obras subterrâneas complexas utilizando sondas rotativas e rotopercussivas de alta tecnologia, capazes de perfurar solos e formações rochosas profundas com total segurança e respeito às normas ambientais.</p>
+                    <div class="badge-importancia"><strong>Por que importa:</strong> Evita contaminações superficiais e garante uma obra duradoura com fluxo constante por décadas.</div>
+                </div>
 
-            <div class="card-servico">
-                <h3>Manutenção Preventiva e Corretiva</h3>
-                <p>Acompanhamento técnico periódico para avaliar as condições mecânicas e elétricas do poço (preventiva), além de assistência ágil e emergencial para correção de falhas e interrupções no fornecimento (corretiva).</p>
-                <p class="importancia">Por que importa: Reduz custos com quebras inesperadas em até 70% e blinda seu sistema contra paradas repentinas.</p>
-            </div>
+                <div class="card-servico">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Manutenção Preventiva e Corretiva</h3>
+                    <p>Acompanhamento técnico periódico para avaliar as condições mecânicas e elétricas do poço (preventiva), além de assistência ágil e emergencial para correção de falhas e interrupções no fornecimento (corretiva).</p>
+                    <div class="badge-importancia"><strong>Por que importa:</strong> Reduz custos com quebras inesperadas em até 70% e blinda seu sistema contra paradas repentinas.</div>
+                </div>
 
-            <div class="card-servico">
-                <h3>Bombas Submersas</h3>
-                <p>Dimensionamento preciso, instalação cuidadosa e substituição de motobombas submersas adequadas à profundidade e à vazão específica de cada poço artesiano.</p>
-                <p class="importancia">Por que importa: Evita o desgaste do motor operando a seco e otimiza o consumo energético, reduzindo significativamente a conta de luz.</p>
-            </div>
+                <div class="card-servico">
+                    <div class="card-icon">🔌</div>
+                    <h3>Bombas Submersas</h3>
+                    <p>Dimensionamento preciso, instalação cuidadosa e substituição de motobombas submersas adequadas à profundidade e à vazão específica de cada poço artesiano.</p>
+                    <div class="badge-importancia"><strong>Por que importa:</strong> Evita o desgaste do motor operando a seco e otimiza o consumo energético, reduzindo significativamente a conta de luz.</</div>
+                </div>
 
-            <div class="card-servico">
-                <h3>Painéis de Comando e Automação</h3>
-                <p>Montagem e instalação de quadros elétricos de proteção equipados com relés térmicos, protetores de surto e sistemas automatizados por sensores de nível.</p>
-                <p class="importancia">Por que importa: Age como o cérebro do poço, protegendo os componentes caros contra oscilações de energia e controlando o nível dos reservatórios automaticamente.</p>
-            </div>
+                <div class="card-servico">
+                    <div class="card-icon">📊</div>
+                    <h3>Painéis de Comando e Automação</h3>
+                    <p>Montagem e instalação de quadros elétricos de proteção equipados com relés térmicos, protetores de surto e sistemas automatizados por sensores de nível.</p>
+                    <div class="badge-importancia"><strong>Por que importa:</strong> Age como o cérebro do poço, protegendo os componentes caros contra oscilações de energia e controlando o nível dos reservatórios automaticamente.</div>
+                </div>
 
-            <div class="card-servico">
-                <h3>Limpeza e Recuperação de Poços</h3>
-                <p>Tratamento químico biodegradável e mecânico por injeção de ar sob alta pressão para a remoção de detritos, argila, ferro e incrustações bacterianas.</p>
-                <p class="importancia">Por que importa: Desobstrui as fendas do aquífero, restaurando a vazão original do poço e melhorando a turbidez e pureza da água.</p>
+                <div class="card-servico">
+                    <div class="card-icon">💎</div>
+                    <h3>Limpeza e Recuperação de Poços</h3>
+                    <p>Tratamento químico biodegradável e mecânico por injeção de ar sob alta pressão para a remoção de detritos, argila, ferro e incrustações bacterianas.</p>
+                    <div class="badge-importancia"><strong>Por que importa:</strong> Desobstrui as fendas do aquífero, restaurando a vazão original do poço e melhorando a turbidez e pureza da água.</div>
+                </div>
             </div>
-
         </div>
     </section>
 
     <section id="sobre" class="infraestrutura">
-        <div class="grid-duplo">
-            
+        <div class="container grid-duplo">
             <div class="bloco-info">
+                <span class="subtitulo-claro">Diferenciais</span>
                 <h3>Por que escolher a F & E?</h3>
-                <ul>
+                <ul class="lista-moderna">
                     <li><strong>Equipe Especializada:</strong> Engenheiros e sondadores com ampla experiência geológica para locações assertivas e seguras.</li>
                     <li><strong>Equipamentos Modernos:</strong> Maquinário de ponta que acelera o tempo de obra e gera menos impacto ambiental no seu terreno.</li>
                     <li><strong>Soluções Completas:</strong> Atendimento no formato Turn-Key (Chave na mão), cuidando desde o início do projeto até a ativação elétrica final.</li>
@@ -76,30 +89,33 @@
             </div>
 
             <div class="bloco-info">
+                <span class="subtitulo-claro">Segmentos</span>
                 <h3>Setores Atendidos</h3>
-                <ul>
+                <ul class="lista-moderna">
                     <li><strong>Residências e Condomínios:</strong> Foco total na economia na conta de água e na garantia de um abastecimento contínuo e seguro, livre dos racionamentos, tarifas abusivas e crises hídricas das redes públicas convencionais.</li>
                     <li><strong>Propriedades Rurais (Agronegócio):</strong> Vazão garantida e essencial para a irrigação eficiente de lavouras, trato adequado de animais (piscicultura, avicultura, pecuária) e higienização de galpões, trazendo estabilidade e evitando prejuízos financeiros imensos no campo.</li>
                     <li><strong>Indústrias:</strong> Fornecimento contínuo de água com fluxos ininterruptos, custos operacionais altamente previsíveis e total adequação técnica e química às exigências rigorosas de processos fabris e linhas de produção.</li>
                     <li><strong>Comércios (Hotéis, Clubes, Lavanderias):</strong> Segurança hídrica absoluta para setores que dependem diretamente da água para operar, blindando o estabelecimento contra aumentos de tarifas e eliminando qualquer risco de interrupção no atendimento ao cliente por falta de estoque.</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
     <footer id="contato">
-        <div class="contatos">
+        <div class="container footer-content">
             <h2>Fale Conosco</h2>
-            <p>Atendimento focado na região dos Campos Gerais e Centro-Sul do Paraná</p>
-            <p>WhatsApp Comercial 1: <strong>(42) 99113-3334</strong></p>
-            <p>WhatsApp Comercial 2: <strong>(42) 99935-6872</strong></p>
-            <p style="margin-top: 20px;">
-                <a href="https://wa.me/5542991133334" target="_blank" class="btn-whatsapp">Iniciar Conversa no WhatsApp</a>
-            </p>
-        </div>
-        <div class="direitos">
-            <p>&copy; 2026 F & E Poços Artesianos. Comprometimento com a qualidade da água que move o seu dia a dia.</p>
+            <p class="atendimento-txt">Atendimento focado na região dos Campos Gerais e Centro-Sul do Paraná</p>
+            
+            <div class="cards-contato">
+                <div class="card-tel">WhatsApp 1: <span>(42) 99113-3334</span></div>
+                <div class="card-tel">WhatsApp 2: <span>(42) 99935-6872</span></div>
+            </div>
+
+            <a href="https://wa.me/5542991133334" target="_blank" class="btn-whatsapp-footer">Chamar no WhatsApp Comercial</a>
+            
+            <div class="direitos">
+                <p>&copy; 2026 F & E Poços Artesianos. Comprometimento com a qualidade da água que move o seu dia a dia.</p>
+            </div>
         </div>
     </footer>
 
